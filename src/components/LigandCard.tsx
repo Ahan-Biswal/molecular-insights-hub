@@ -37,7 +37,7 @@ function Structure2D({ name }: { name: string }) {
     queryFn: () => (meta.query ? fetchPubChem(meta.query) : Promise.resolve(null)),
     enabled: Boolean(meta.query),
     staleTime: 24 * 60 * 60 * 1000,
-    retry: 1,
+    retry: 2,
   });
 
   const needsFallback = !meta.query || (!isLoading && (!data || imgFailed));

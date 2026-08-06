@@ -11,6 +11,9 @@ export const INTERACTION_POSES: Record<string, string> = {
   // Cronobacter strongly bound pose (Cefotaxime, ΔG = -7.2 kcal/mol)
   "Cronobacter|Cefotaxime": "/interactions/Cefotaxime_complex_pose_1.pdb",
 
+  // Edwardsiella (E. tarda) strongly bound pose (Rhodamine B, ΔG = -7.1 kcal/mol)
+  "Edwardsiella|Rhodamine B": "/interactions/E. tarda.pdb",
+
   // Enterobacter strongly bound pose (Safranine, ΔG = -9.2 kcal/mol)
   "Enterobacter|Safranine": "/interactions/Safranine_complex_pose_1.pdb",
 

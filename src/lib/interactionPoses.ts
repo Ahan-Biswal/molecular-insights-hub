@@ -36,6 +36,9 @@ export const INTERACTION_POSES: Record<string, string> = {
   // Yersinia strongly bound pose (Safranine, ΔG = -7.8 kcal/mol)
   "Yersinia|Safranine": "/interactions/Safranine_Yersinia.pdb",
 
+  // Klebsiella (K. pneumoniae) strongly bound pose (Ceftazidime, ΔG = -8.1 kcal/mol)
+  "Klebsiella|Ceftazidime": "/interactions/K. pneumoniae.pdb",
+
   // Klebsiella (K. oxytoca) strongly bound pose (Tazobactam, ΔG = -8.0 kcal/mol)
   "Klebsiella|Tazobactam": "/interactions/K.Oxytoca.pdb",
 

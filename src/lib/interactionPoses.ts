@@ -33,6 +33,10 @@ export const INTERACTION_POSES: Record<string, string> = {
   // Salmonella (S. Typhi) strongly bound pose (Azithromycin, ΔG = -13.0 kcal/mol)
   "Salmonella|Azithromycin": "/interactions/S. Typhi.pdb",
 
+  // Serratia (S. marcescens) strongly bound poses (Ceftazidime & Safranine, ΔG = -8.0 kcal/mol)
+  "Serratia|Ceftazidime": "/interactions/Ceftazidime_Serratia (S. marcescens).pdb",
+  "Serratia|Safranine": "/interactions/Safranine_Serratia (S. marcescens).pdb",
+
   // Shigella (S. dysenteriae) strongly bound pose (Ceftriaxone, ΔG = -9.5 kcal/mol)
   "Shigella|Ceftriaxone": "/interactions/S. dysenteriae.pdb",
 

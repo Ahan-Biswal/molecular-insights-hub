@@ -166,7 +166,9 @@ export function LigandCard({
               <AffinityBar value={record.affinity} />
             </div>
             <p className="mt-2 text-xs text-muted-foreground">
-              Docked against {record.structureId} ({record.genus} {record.species}).
+              Docked against {record.structureId} (<span className="italic">{record.species}</span>
+              ).
+
             </p>
           </div>
 

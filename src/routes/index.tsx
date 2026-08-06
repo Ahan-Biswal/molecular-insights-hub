@@ -2,11 +2,14 @@ import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { ClientOnly } from "@tanstack/react-router";
-import { ExternalLink, Moon, Sun, Dna } from "lucide-react";
+import { ExternalLink, Dna } from "lucide-react";
 import { GenusSearch } from "@/components/GenusSearch";
 import { LigandCard } from "@/components/LigandCard";
 import { MolstarViewerPanel } from "@/components/MolstarViewerPanel";
-import { DatasetExplorer, AffinityHeatmap } from "@/components/DatasetViews";
+import { GenusOverviewCard } from "@/components/GenusOverviewCard";
+import { AnimatedRays } from "@/components/AnimatedRays";
+import { AnimatedThemeToggler } from "@/components/AnimatedThemeToggler";
+import { getInteractionPoseUrl } from "@/lib/interactionPoses";
 import { fetchStructureMeta } from "@/lib/chem-api";
 import { genera, organisms, records, recordsFor, type Organism } from "@/lib/dataset";
 
@@ -34,25 +37,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-function ThemeToggle() {
-  const [dark, setDark] = useState(false);
-  return (
-    <button
-      type="button"
-      aria-label="Toggle dark mode"
-      onClick={() => {
-        const next = !dark;
-        setDark(next);
-        document.documentElement.classList.toggle("dark", next);
-      }}
-      className="glass-chip hover:text-accent"
-    >
-      {dark ? <Sun className="h-3.5 w-3.5" aria-hidden /> : <Moon className="h-3.5 w-3.5" aria-hidden />}
-      <span className="hidden sm:inline">{dark ? "Light" : "Dark"}</span>
-    </button>
-  );
-}
 
 function StructurePanel({ organism }: { organism: Organism }) {
   const { data, isLoading } = useQuery({
@@ -92,9 +76,9 @@ function StructurePanel({ organism }: { organism: Organism }) {
             <dd className="font-mono text-foreground">{organism.structureId}</dd>
           </div>
           <div>
-            <dt className="text-xs text-muted-foreground">Organism</dt>
-            <dd className="text-foreground italic">
-              {data?.organism ?? `${organism.genus} ${organism.species.replace(/^\w\.\s*/, "")}`}
+            <dt className="text-xs text-muted-foreground">Genus & Species</dt>
+            <dd className="font-medium text-foreground">
+              {organism.genus} ({organism.species})
             </dd>
           </div>
           <div>
@@ -149,11 +133,19 @@ function StructurePanel({ organism }: { organism: Organism }) {
 
 function Index() {
   const [selected, setSelected] = useState<Organism | null>(null);
-  const ligands = useMemo(() => (selected ? recordsFor(selected) : []), [selected]);
+  const ligands = useMemo(() => {
+    if (!selected) return [];
+    const list = recordsFor(selected);
+    return [...list].sort((a, b) => a.affinity - b.affinity);
+  }, [selected]);
+  const minAffinity = useMemo(
+    () => (ligands.length > 0 ? ligands[0]!.affinity : null),
+    [ligands]
+  );
 
   return (
     <main className="min-h-screen">
-      <div className="grid-paper border-b border-border">
+      <AnimatedRays className="border-b border-border py-2 sm:py-4">
         <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
           <header className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 sm:flex sm:justify-between">
             <div className="flex min-w-0 items-center gap-2.5">
@@ -163,7 +155,7 @@ function Index() {
               </span>
             </div>
             <ClientOnly fallback={<span />}>
-              <ThemeToggle />
+              <AnimatedThemeToggler />
             </ClientOnly>
           </header>
 
@@ -177,22 +169,25 @@ function Index() {
             PubChem and AlphaFold data.
           </p>
 
-          <div className="mt-8 max-w-2xl">
+          <div className="mt-8 max-w-2xl mx-auto text-center">
             <GenusSearch selected={selected} onSelect={setSelected} />
             <p className="mt-2 px-2 text-xs text-muted-foreground">
               Click the bar to browse every genus in the dataset.
             </p>
           </div>
         </div>
-      </div>
+      </AnimatedRays>
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         {selected ? (
           <div className="flex flex-col gap-14">
+            <section aria-labelledby="overview-heading">
+              <GenusOverviewCard organism={selected} />
+            </section>
+
             <section aria-labelledby="structure-heading">
               <h2 id="structure-heading" className="text-2xl">
-                {selected.genus} <span className="italic">{selected.species}</span> — target
-                structure
+                {selected.genus} <span className="text-accent">({selected.species})</span> — target structure
               </h2>
               <p className="mt-1 mb-6 text-sm text-muted-foreground">
                 Drag to rotate, scroll to zoom, right-drag to pan.
@@ -205,55 +200,26 @@ function Index() {
                 Ligands and binding affinities
               </h2>
               <p className="mt-1 mb-6 text-sm text-muted-foreground">
-                {ligands.length} compounds docked against {selected.structureId}.
+                {ligands.length} compounds docked against {selected.structureId} ({selected.genus} {selected.species}), sorted by binding affinity (strongest bound pose first).
               </p>
               <div className="flex flex-col gap-5">
-                {ligands.map((r) => (
-                  <LigandCard key={r.ligand} record={r} />
-                ))}
+                {ligands.map((r) => {
+                  const isStrongest = r.affinity === minAffinity;
+                  return (
+                    <LigandCard
+                      key={r.ligand}
+                      record={r}
+                      isStrongest={isStrongest}
+                      poseUrl={isStrongest ? getInteractionPoseUrl(r.genus, r.ligand) : undefined}
+                    />
+                  );
+                })}
               </div>
             </section>
           </div>
-        ) : (
-          <section className="glass-panel rounded-xl p-8 text-center">
-            <h2 className="text-xl">Select a genus to begin</h2>
-            <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
-              The search opens a full list of the {genera.length} Enterobacteriaceae genera in this
-              study. Choosing one loads its outer-membrane structure and every docked ligand.
-            </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
-              {genera.slice(0, 8).map(({ genus, organisms: os }) => (
-                <button
-                  key={genus}
-                  type="button"
-                  onClick={() => setSelected(os[0]!)}
-                  className="glass-chip text-xs hover:text-accent"
-                >
-                  {genus}
-                </button>
-              ))}
-            </div>
-          </section>
-        )}
+        ) : null}
 
-        <section className="mt-16" aria-labelledby="dataset-heading">
-          <h2 id="dataset-heading" className="text-2xl">
-            Full dataset
-          </h2>
-          <p className="mt-1 mb-6 text-sm text-muted-foreground">
-            Every docking result in one table, plus a genus-by-ligand affinity map.
-          </p>
-          <DatasetExplorer />
-          <div className="mt-8 hidden md:block">
-            <h3 className="mb-3 text-lg">Affinity map</h3>
-            <AffinityHeatmap />
-            <p className="mt-2 text-xs text-muted-foreground">
-              Darker cells indicate stronger predicted binding.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-16" aria-labelledby="methods-heading">
+        <section className={selected ? "mt-16" : ""} aria-labelledby="methods-heading">
           <h2 id="methods-heading" className="text-2xl">
             Methods and sources
           </h2>

@@ -193,3 +193,123 @@
   background-size: 34px 34px;
 }
 
+@keyframes aurora-bg {
+  0% {
+    background-position: 0% 0%, 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%, 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes aurora-overlay {
+  0% {
+    background-position: 100% 0%, 100% 0%;
+  }
+  50% {
+    background-position: 0% 100%, 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%, 100% 0%;
+  }
+}
+
+.animate-aurora-bg {
+  animation: aurora-bg 12s ease-in-out infinite;
+}
+
+.animate-aurora-overlay {
+  animation: aurora-overlay 16s ease-in-out infinite;
+}
+
+@keyframes light-ray-sway-left {
+  0%, 100% {
+    transform: rotate(-4deg) scaleY(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(5deg) scaleY(1.06);
+    opacity: 0.95;
+  }
+}
+
+@keyframes light-ray-sway-right {
+  0%, 100% {
+    transform: rotate(4deg) scaleY(1.05);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(-5deg) scaleY(0.97);
+    opacity: 0.65;
+  }
+}
+
+@keyframes light-ray-pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.05);
+  }
+}
+
+.animate-ray-left {
+  transform-origin: 50% 0%;
+  animation: light-ray-sway-left 8s ease-in-out infinite;
+}
+
+.animate-ray-right {
+  transform-origin: 50% 0%;
+  animation: light-ray-sway-right 10s ease-in-out infinite;
+}
+
+.animate-ray-center {
+  transform-origin: 50% 0%;
+  animation: light-ray-sway-left 6s ease-in-out infinite reverse;
+}
+
+.animate-ray-glow {
+  animation: light-ray-pulse 7s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-shine {
+  animation: shine var(--duration, 14s) infinite linear;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+
+

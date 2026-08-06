@@ -105,7 +105,7 @@ const META: Record<string, Partial<LigandMeta>> = {
     smiles: "Cc1cc2nc3cc(C)c(N)cc3[n+](-c4ccccc4)c2cc1N.[Cl-]",
   },
   "Beta-lactams": { query: null, kind: "class" },
-  "Piperacillin-tazobactam": { components: ["Piperacillin", "Tazobactam"] },
+  "Tazobactam": { query: "Tazobactam" },
   "Trimethoprim-sulfamethoxazole": { components: ["Trimethoprim", "Sulfamethoxazole"] },
   "Griseoluteic acid": { query: "Griseoluteic acid" },
 };

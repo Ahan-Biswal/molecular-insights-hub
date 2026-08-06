@@ -151,7 +151,7 @@ function Index() {
             <div className="flex min-w-0 items-center gap-2.5">
               <Dna className="h-5 w-5 shrink-0 text-accent" aria-hidden />
               <span className="truncate text-sm tracking-wide text-muted-foreground uppercase">
-                Doctoral research · Molecular docking
+
               </span>
             </div>
             <ClientOnly fallback={<span />}>

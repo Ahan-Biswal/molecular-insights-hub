@@ -30,6 +30,9 @@ export const INTERACTION_POSES: Record<string, string> = {
   // Pantoea strongly bound pose (Rhodamine B, ΔG = -7.7 kcal/mol)
   "Pantoea|Rhodamine B": "/interactions/Rhodamine_B_Pantoea.pdb",
 
+  // Salmonella (S. Typhi) strongly bound pose (Azithromycin, ΔG = -13.0 kcal/mol)
+  "Salmonella|Azithromycin": "/interactions/S. Typhi.pdb",
+
   // Yersinia strongly bound pose (Safranine, ΔG = -7.8 kcal/mol)
   "Yersinia|Safranine": "/interactions/Safranine_Yersinia.pdb",
 

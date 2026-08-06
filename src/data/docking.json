@@ -1,0 +1,810 @@
+{
+ "records": [
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "Moxifloxacin",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "Ceftriaxone",
+   "affinity": -8.0
+  },
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "Meropenem",
+   "affinity": -5.6
+  },
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "Rhodamine B",
+   "affinity": -7.4
+  },
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "Rhodamine 6g",
+   "affinity": -6.9
+  },
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "Safranine",
+   "affinity": -7.1
+  },
+  {
+   "genus": "Escherichia",
+   "species": "E. coli",
+   "structureId": "9GGQ",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.4
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "Ciprofloxacin",
+   "affinity": -7.7
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "Ceftriaxone",
+   "affinity": -8.8
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "Azithromycin",
+   "affinity": -13.0
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "Rhodamine B",
+   "affinity": -7.9
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "Safranine",
+   "affinity": -7.7
+  },
+  {
+   "genus": "Salmonella",
+   "species": "S. Typhi",
+   "structureId": "5ZTJ",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.6
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "Ceftazidime",
+   "affinity": -8.1
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "Meropenem",
+   "affinity": -5.8
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "Colistin",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "Rhodamine B",
+   "affinity": -7.7
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "Safranine",
+   "affinity": -7.6
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. pneumoniae",
+   "structureId": "2OV5",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.3
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "Aztreonam",
+   "affinity": -7.6
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "Piperacillin-tazobactam",
+   "affinity": -8.0
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "Ertapenem",
+   "affinity": -7.8
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "Rhodamine B",
+   "affinity": -6.8
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.2
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "Safranine",
+   "affinity": -7.0
+  },
+  {
+   "genus": "Klebsiella",
+   "species": "K. oxytoca",
+   "structureId": "3BYD",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.9
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "Ciprofloxacin",
+   "affinity": -8.1
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "Azithromycin",
+   "affinity": -9.0
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "Ceftriaxone",
+   "affinity": -9.5
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "Rhodamine B",
+   "affinity": -9.3
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "Rhodamine 6g",
+   "affinity": -8.5
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "Safranine",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Shigella",
+   "species": "S. dysenteriae",
+   "structureId": "1AOI",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.4
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "Cefotaxime",
+   "affinity": -6.8
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "Meropenem",
+   "affinity": -6.2
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "Tigecycline",
+   "affinity": -8.0
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "Rhodamine B",
+   "affinity": -6.9
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.0
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "Safranine",
+   "affinity": -9.2
+  },
+  {
+   "genus": "Enterobacter",
+   "species": "E. cloacae",
+   "structureId": "1RGZ",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.4
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "Ceftazidime",
+   "affinity": -9.0
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "Cefepime",
+   "affinity": -8.4
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "Meropenem",
+   "affinity": -7.4
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "Rhodamine B",
+   "affinity": -9.2
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "Rhodamine 6g",
+   "affinity": -8.2
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "Safranine",
+   "affinity": -8.7
+  },
+  {
+   "genus": "Citrobacter",
+   "species": "C. freundii",
+   "structureId": "1FR6",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.6
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "Mecillinam",
+   "affinity": -7.4
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "Doxycycline",
+   "affinity": -7.7
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "Streptomycin",
+   "affinity": -7.4
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "Rhodamine B",
+   "affinity": -7.4
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "Rhodamine 6g",
+   "affinity": -6.8
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "Safranine",
+   "affinity": -7.8
+  },
+  {
+   "genus": "Yersinia",
+   "species": "Y. pestis",
+   "structureId": "P0A2D0",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.7
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "Imipenem",
+   "affinity": -5.3
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "Aztreonam",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "Amikacin",
+   "affinity": -6.0
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "Rhodamine B",
+   "affinity": -7.1
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.0
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "Safranine",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Morganella",
+   "species": "M. morganii",
+   "structureId": "6L3S",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.7
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "Beta-lactams",
+   "affinity": -3.3
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "Cefotaxime",
+   "affinity": -7.2
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "Meropenem",
+   "affinity": -6.5
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "Rhodamine B",
+   "affinity": -6.7
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.1
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "Safranine",
+   "affinity": -7.0
+  },
+  {
+   "genus": "Cronobacter",
+   "species": "C. sakazakii",
+   "structureId": "6NC5",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.4
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "Griseoluteic acid",
+   "affinity": -6.8
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "Ciprofloxacin",
+   "affinity": -6.5
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "Gentamicin",
+   "affinity": -6.3
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "Rhodamine B",
+   "affinity": -7.7
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "Rhodamine 6g",
+   "affinity": -6.7
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "Safranine",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Pantoea",
+   "species": "P. agglomerans",
+   "structureId": "3SK2",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.4
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "Imipenem",
+   "affinity": -6.5
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "Ceftazidime",
+   "affinity": -8.0
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "Amikacin",
+   "affinity": -7.2
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "Rhodamine B",
+   "affinity": -7.7
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.9
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "Safranine",
+   "affinity": -8.0
+  },
+  {
+   "genus": "Serratia",
+   "species": "S. marcescens",
+   "structureId": "5EV6",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -7.9
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "Ceftriaxone",
+   "affinity": -9.7
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "Ciprofloxacin",
+   "affinity": -8.0
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "Gentamicin",
+   "affinity": -7.9
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "Rhodamine B",
+   "affinity": -8.5
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "Rhodamine 6g",
+   "affinity": -8.9
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "Safranine",
+   "affinity": -8.8
+  },
+  {
+   "genus": "Proteus",
+   "species": "P. mirabilis",
+   "structureId": "1H6A",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "Amikacin",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "Meropenem",
+   "affinity": -7.2
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "Trimethoprim-sulfamethoxazole",
+   "affinity": -7.2
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "Rhodamine B",
+   "affinity": -8.1
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "Safranine",
+   "affinity": -9.1
+  },
+  {
+   "genus": "Providencia",
+   "species": "P. stuartii",
+   "structureId": "2OQX",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -7.3
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "Ampicillin",
+   "affinity": -5.9
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "Oxytetracycline",
+   "affinity": -6.8
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "Florfenicol",
+   "affinity": -5.6
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "Rhodamine B",
+   "affinity": -7.1
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "Rhodamine 6g",
+   "affinity": -6.7
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "Safranine",
+   "affinity": -6.7
+  },
+  {
+   "genus": "Edwardsiella",
+   "species": "E. tarda",
+   "structureId": "3EAA",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -6.2
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "Cefotaxime",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "Ciprofloxacin",
+   "affinity": -7.2
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "Gentamicin",
+   "affinity": -7.8
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "Rhodamine B",
+   "affinity": -7.1
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "Rhodamine 6g",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "Safranine",
+   "affinity": -7.5
+  },
+  {
+   "genus": "Hafnia",
+   "species": "H. alvei",
+   "structureId": "4ARS",
+   "ligand": "hexamethyl pararosaniline chloride(crystal violet)",
+   "affinity": -7.6
+  }
+ ],
+ "effluxSubstrates": [
+  {
+   "compound": "Rhodamine B",
+   "target": "AcrB / RND-family multidrug efflux pump (e.g. AcrAB-TolC)",
+   "notes": "Classic efflux-pump substrate/probe; applicable across all Enterobacteriaceae genera since AcrB is highly conserved"
+  },
+  {
+   "compound": "Rhodamine 6G",
+   "target": "AcrB / RND-family multidrug efflux pump",
+   "notes": "Same rationale as Rhodamine B"
+  },
+  {
+   "compound": "Safranine O",
+   "target": "AcrB / RND-family multidrug efflux pump",
+   "notes": "Cationic dye, common efflux substrate in accumulation assays"
+  },
+  {
+   "compound": "Crystal violet (hexamethyl pararosaniline chloride)",
+   "target": "AcrB / RND-family multidrug efflux pump; also outer-membrane/porin permeability marker",
+   "notes": "Widely used to assess membrane permeability and efflux activity"
+  }
+ ]
+}

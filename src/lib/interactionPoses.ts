@@ -35,6 +35,9 @@ export const INTERACTION_POSES: Record<string, string> = {
 
   // Proteus (P. mirabilis) strongly bound pose (Ceftriaxone, ΔG = -9.7 kcal/mol)
   "Proteus|Ceftriaxone": "/interactions/P.mirabillis.pdb",
+
+  // Providencia (P. stuartii) strongly bound pose (Safranine, ΔG = -9.1 kcal/mol)
+  "Providencia|Safranine": "/interactions/P. stuartii.pdb",
 };
 
 /**
